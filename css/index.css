@@ -1,0 +1,255 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: 300
+}
+
+body {
+    width: 100%;
+    height: 100%
+}
+
+#vicclogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 1023px) {
+    body {
+        font-size: .8em
+    }
+    small.date {
+        font-size: .6em
+    }
+}
+
+.clr:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+#header {
+    color: #fff;
+    z-index: 10;
+    position: relative
+}
+
+#header {
+    height: 80px
+}
+
+#header .social {
+    display: none
+}
+
+.social {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.social a {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    text-indent: -9999px;
+    z-index: 10;
+    position: relative;
+    transition: background .2s ease-out
+}
+
+.social a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 26px;
+    left: 24px;
+    background-image: url(../images/social.png);
+    background-size: auto 100%
+}
+
+.social a.facebook::after {
+    background-position: -28px 0
+}
+
+.social a:hover {
+    background: rgba(255, 255, 255, 0.07)
+}
+
+.social a:hover {
+    background: rgba(255, 255, 255, 0.07);
+    text-decoration: none
+}
+
+.social a:before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-style: solid;
+    border-width: 80px 0 0 80px;
+    border-color: rgba(255, 255, 255, 0.03) transparent transparent transparent;
+    transition: opacity .2s ease-out;
+    transition-delay: .1s
+}
+
+.social a:hover:before {
+    opacity: 1
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: 11
+}
+
+nav div {
+    max-width: 980px;
+    margin: 0 auto
+}
+
+nav div span {
+    display: none
+}
+
+nav div ul {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 0;
+    vertical-align: top
+}
+
+nav div ul:first-of-type {
+    margin-left: 30px;
+    padding-left: 40px
+}
+
+nav div ul li {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    font-style: 1.05em;
+    cursor: pointer;
+    overflow: hidden;
+    vertical-align: top;
+    font-weight: 400;
+    transition: background .2s ease-out
+}
+
+nav div ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 10
+}
+
+nav div ul li a:hover {
+    text-decoration: none
+}
+
+nav div ul li:hover {
+    background: rgba(255, 255, 255, 0.07);
+    text-decoration: none
+}
+
+nav div ul li:before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-style: solid;
+    border-width: 80px 0 0 80px;
+    border-color: rgba(255, 255, 255, 0.03) transparent transparent transparent;
+    transition: opacity .2s ease-out;
+    transition-delay: .1s
+}
+
+nav div ul li:hover:before {
+    opacity: 1
+}
+
+@media (max-width: 767px) {
+    #header {
+        height: 60px
+    }
+    #header .social {
+        height: 60px;
+        display: inline-block
+    }
+    #header .social a {
+        height: 60px;
+        width: 60px
+    }
+    #header .social a::after {
+        top: 18px;
+        left: 16px
+    }
+    nav {
+        background: #20201F;
+        height: auto;
+        width: auto
+    }
+    nav .social {
+        display: none
+    }
+    nav div span {
+        color: #969696;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 16px 0 0 32px
+    }
+    nav div ul, nav div ul:first-of-type {
+        padding: 0;
+        margin: 16px 0;
+        display: block;
+        line-height: 10px
+    }
+    nav div ul li, nav div ul:first-of-type li {
+        display: inline-block;
+        width: 220px;
+        font-size: 1.2em;
+        padding: 10px 0;
+        border-bottom: 1px solid #303030;
+        margin-right: 16px;
+        padding-left: 32px;
+        line-height: 24px
+    }
+    nav div ul li:last-child, nav div ul:first-of-type li:last-child {
+        border-bottom: none
+    }
+    nav div ul li a, nav div ul:first-of-type li a {
+        color: #fff
+    }
+    main {
+        left: 0
+    }
+    #header .nav {
+        display: none
+    }
+}
+
